@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario Musical</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1 class="titulo">Cuestionario sobre música</h1>
+
+        <form>
+            <div>
+                <label for="correo-electronico">Escribe tu correo electrónico:</label><br>
+                <input type="email" id="correo-electronico" name="correo-electronico" placeholder="Escribe tu correo aquí">
+            </div>
+
+            <br><br>
+
+            <div>
+                <label for="artista-favorito">¿Quién es tu artista favorito?</label><br>
+                <input type="text" id="artista-favorito" name="artista-favorito" placeholder="Nombre del artista">
+            </div>
+
+            <br><br>
+
+            <div>
+                <label for="grupo-favorito">¿Cuál es tu grupo favorito?</label><br>
+                <input type="text" id="grupo-favorito" name="grupo-favorito" placeholder="Nombre del grupo">
+            </div>
+
+            <br><br>
+
+            <div>
+                <label for="album-favorito">¿Cuál es tu álbum favorito?</label><br>
+                <input type="text" id="album-favorito" name="album-favorito" placeholder="Nombre del álbum">
+            </div>
+
+            <br><br>
+
+            <div>
+                <label for="nombre-playlist">Escribe un nombre creativo para una playlist:</label><br>
+                <input type="text" id="nombre-playlist" name="nombre-playlist" placeholder="Nombre de la playlist" required>
+            </div>
+
+            <br><br>
+            
+            <div>
+                <p>¿Qué plataforma usas para escuchar música?</p>
+            <input type="radio" id="spotify" name="plataforma" value="Spotify">
+            <label for="spotify"><a href="https://open.spotify.com/">Spotify</a></label>
+            <br>
+            <input type="radio" id="apple" name="plataforma" value="Apple Music">
+            <label for="apple">Apple Music</label>
+            <br>
+            <input type="radio" id="youtube" name="plataforma" value="YouTube Music">
+            <label for="youtube">YouTube Music</label>
+            <br>
+            <input type="radio" id="soundcloud" name="plataforma" value="Soundcloud">
+            <label for="youtube"><a href="https://soundcloud.com/">Soundcloud</a></label>
+            <br>
+            <input type="radio" id="otra" name="plataforma" value="Otra">
+            <label for="otra">Otra</label>
+            </div>
+
+            <br><br>
+            
+            <div>
+                <p>¿Qué géneros musicales escuchas?</p>
+            <input type="checkbox" id="rock" name="genero" value="Rock">
+            <label for="rock">Rock</label>
+            <br>
+            <input type="checkbox" id="pop" name="genero" value="Pop">
+            <label for="pop">Pop</label>
+            <br>
+            <input type="checkbox" id="jazz" name="genero" value="Jazz">
+            <label for="jazz">Jazz</label>
+            <br>
+            <input type="checkbox" id="electro" name="genero" value="Electrónica">
+            <label for="electro">Electrónica</label>
+            <br>
+            <input type="checkbox" id="otro-genero" name="genero" value="Otro">
+            <label for="otro-genero">Otro</label>
+            </div>
+
+            <br><br>
+            
+            <div>
+                <label for="volumen">¿A qué volumen escuchas la música?</label>
+                <br>
+                <input type="range" id="volumen" name="volumen" min="0" max="100" value="50">
+            </div>
+
+            <br>
+            <br>
+            
+            <div>
+                <label for="frecuencia">¿Con qué frecuencia escuchas música?</label>
+                <br>
+                <select id="frecuencia" name="frecuencia">
+                    <option value="todos-los-dias">Todos los días</option>
+                    <option value="varias-veces-semana">Varias veces a la semana</option>
+                    <option value="ocasionalmente">Ocasionalmente</option>
+                    <option value="rara-vez">Rara vez</option>
+                </select>
+            </div>
+
+            <br>
+            <br>
+            
+            <div>
+                <label for="comentarios">Espacio para recomendaciones musciales:</label>
+                <br>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Escribe tus recomendaciones aquí"></textarea>
+            </div>
+
+            <br>
+            <br>
+            
+            <div>
+                <input type="submit" value="Enviar" id="boton-enviar">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
